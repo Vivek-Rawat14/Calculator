@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calcul">
+            <div class="userinput">
+                <input type="text" id="user" >
+            </div>
+
+
+            <div class="nu">
+                <button onclick="user.value += 1 ">1</button>
+                <button onclick="user.value += 2 ">2</button>
+                <button onclick="user.value += 3 ">3</button>
+                <button onclick="user.value += '+' ">+</button>
+            </div>
+            <div class="nu">
+                <button onclick="user.value += 4 ">4</button>
+                <button onclick="user.value += 5 ">5</button>
+                <button onclick="user.value += 6 ">6</button>
+                <button onclick="user.value += '-' ">-</button>
+            </div>    
+            <div class="nu">
+                <button onclick="user.value += 7 ">7</button>
+                <button onclick="user.value += 8 ">8</button>
+                <button onclick="user.value += 9 ">9</button>
+                <button onclick="user.value += '*' ">x</button>
+            </div>
+            <div class="nu">
+                <button onclick="user.value += '/' ">/</button>
+                <button onclick="user.value += 0 ">0</button>
+                <button onclick="user.value += '.'">.</button>
+                <button onclick="user.value = eval(user.value)">=</button>
+            </div>
+            <div class="nu">
+                <button id="clear" onclick="user.value = '' "  >Clear</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
